@@ -6,18 +6,17 @@
 /*   By: ebennix <ebennix@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/18 22:56:28 by ebennix           #+#    #+#             */
-/*   Updated: 2022/11/19 04:51:34 by ebennix          ###   ########.fr       */
+/*   Updated: 2022/11/19 16:29:37 by ebennix          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "ft_printf.h"
+#include "ft_printf.h"
 
 int	ft_printptr(unsigned long n)
 {
-	int i;
-	
+	int	i;
+
 	i = 0;
-	
 	if (n >= 0 && n <= 9)
 		i += ft_printchar(n + '0');
 	else if (n >= 10 && n <= 15)

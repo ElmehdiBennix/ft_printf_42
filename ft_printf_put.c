@@ -6,11 +6,11 @@
 /*   By: ebennix <ebennix@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 15:14:29 by ebennix           #+#    #+#             */
-/*   Updated: 2022/11/19 16:03:32 by ebennix          ###   ########.fr       */
+/*   Updated: 2022/11/19 16:29:31 by ebennix          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "ft_printf.h"
+#include "ft_printf.h"
 
 int	ft_printchar(char c)
 {
@@ -24,7 +24,7 @@ int	ft_printstr(char *c)
 
 	i = 0;
 	if (c == NULL)
-		return(ft_printstr("(null)"));
+		return (ft_printstr("(null)"));
 	while (c[i])
 	{
 		write (1, &c[i], 1);
@@ -35,7 +35,7 @@ int	ft_printstr(char *c)
 
 int	ft_printunsigned(unsigned int n)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	if (n >= 0 && n < 10)
@@ -50,7 +50,7 @@ int	ft_printunsigned(unsigned int n)
 	return (i);
 }
 
-int	ft_printnbr(int	n)
+int	ft_printnbr(int n)
 {
 	int	i;
 
