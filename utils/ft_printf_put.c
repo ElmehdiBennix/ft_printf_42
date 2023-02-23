@@ -6,11 +6,11 @@
 /*   By: ebennix <ebennix@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 15:14:29 by ebennix           #+#    #+#             */
-/*   Updated: 2022/11/19 16:29:31 by ebennix          ###   ########.fr       */
+/*   Updated: 2023/02/23 19:26:27 by ebennix          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "../ft_printf.h"
 
 int	ft_printchar(char c)
 {
