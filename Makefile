@@ -6,7 +6,7 @@
 #    By: ebennix <ebennix@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/14 18:44:23 by ebennix           #+#    #+#              #
-#    Updated: 2023/02/23 19:32:25 by ebennix          ###   ########.fr        #
+#    Updated: 2023/02/23 19:33:47 by ebennix          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -55,4 +55,4 @@ git :
 	git commit -m "$(m)"
 	git push
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re git
