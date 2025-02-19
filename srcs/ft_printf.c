@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "inc/ft_printf.h"
 
 static	int	check(const char str, va_list arg)
 {
@@ -52,8 +52,10 @@ int	ft_printf(const char *str, ...)
 			value += check(str[i], arg);
 		}
 		else
-			value += write (1, &str[i], 1);
+        {
+            value += write (1, &str[i], 1);
 			i++;
+        }
 	}
 	va_end(arg);
 	return (value);

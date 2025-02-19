@@ -14,13 +14,13 @@ NAME := libftprintf.a
 
 CFLAGS := -g -Wall -Wextra -Werror
 
-HEADER := ft_printf.h
+HEADER := ./inc/ft_printf.h
 
 CC := cc
 
-FILES := utils/ft_printf_hex  \
-		 utils/ft_printf_put  \
-		 ft_printf
+FILES := ./srcs/utils/ft_printf_hex  \
+		 ./srcs/utils/ft_printf_put  \
+		 ./srcs/ft_printf
 
 SRC := $(FILES:=.c)
 
