@@ -32,6 +32,7 @@ RM := rm -rf
 
 m := "MakefileAutoPush"
 
+# **************************************************************************** #
 
 all : $(NAME)
 
@@ -49,10 +50,12 @@ fclean: clean
 
 re: fclean all
 
-git :
+push :
 	git add .
 	git status
 	git commit -m "$(m)"
 	git push
 
-.PHONY: all clean fclean re git
+# **************************************************************************** #
+
+.PHONY: all clean fclean re push
